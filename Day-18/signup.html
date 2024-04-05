@@ -1,0 +1,161 @@
+<!-- Write a HTML and CSS Code To Make a Website Signup Page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div id="main" class="wrapper">
+      <img src="download.png" alt="error">
+	<h2>Sign Up</h2>
+      <form action="post">
+        <label for="Fn">First Name</label> <br />
+        <input type="text" name="Fn" id="Fn" required  placeholder="First Name"/><br />
+
+        <label for="Last">Last Name</label> <br />
+        <input type="text" name="Ln" id="Ln" required placeholder="Last Name"/><br />
+
+        <label for="dob">Date Of Birth</label> <br />
+        <input type="date" name="dob" id="dob" required /><br />
+
+        <label for="phoneno">Mobile number</label> <br />
+        <input
+          type="number"
+          name="phoneno"
+          id="phoneno"
+          minlength="10"
+          required
+          placeholder="Mobile Number"
+        />
+        <br />
+
+        <label for="email">Mail Id</label> <br />
+        <input type="email" name="email" id="email" required  placeholder="Email" /> <br />
+
+        <label for="gender" id="gen">Gender</label>
+        <br />
+        <input type="radio" name="gender" id="gender" value="Male" />
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="gender" value="Female" />
+        <label for="Female">Female</label>
+        <br />
+
+        <input type="checkbox" name="cb" id="cb" />
+        <label for="cb" id="size">Accept Terms & Conditions</label>
+        <br />
+
+        <input type="submit" value="Create"id="Create" / >
+        <input type="button" value="Clear" id="clear" />
+      </form>
+      <p>Or</p>
+      <h3>Click Here To <a href="index.html">Login In</a></h3>
+    </div>
+
+    <style>
+      img{
+        margin-left: 230px;
+        margin-bottom: 20px;
+        margin-top: -50px;
+        width: 50px;
+        
+      }
+      body{
+        background-color: crimson;
+      }
+      div {
+        border-width: 2px;
+        border-style: solid;
+        /* background-color: rgba(0, 0, 0, 0.8); */
+        border-radius: 50px;
+        width: 500px;
+        /* height: 570px; */
+        margin: auto;
+        margin-top: 25vh;
+        box-shadow: 20px, 10px, 5px;
+        padding: 30px;
+        background-color:burlywood;
+      }
+      label {
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        color: rgb(4, 4, 4);
+      }
+      #Fn,
+      #Ln,
+      #dob,
+      #phoneno,
+      #email {
+        width: 400px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        padding-left: 10px;
+        border-radius: 50px;
+        font-size: 20px;
+       
+      }
+      #gender
+      {
+        text-align: center;
+        margin-left: 40px;
+        margin-bottom: 10px;
+      }
+      #gen{
+        margin-bottom: 10px;
+      }
+      #size{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 5px;
+      }
+      #cb{
+        padding-left: 70px;
+        text-align: center;
+        margin-left: 100px;
+      }
+      #Create{
+        margin-top: 20px;
+        padding: 5px;
+        margin-left: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 25px;        
+        font-size: 20px;
+        width: 150px;
+        background-color: chocolate;
+
+      }
+      #clear{
+        
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 25px;  
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 20px;
+        width: 150px;
+        background-color: chocolate;
+      }
+      h2{
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        color: rgb(214, 67, 67);
+        text-decoration: underline;
+      }
+      
+
+    </style>
+  </body>
+</html>
